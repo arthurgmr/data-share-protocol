@@ -4,12 +4,12 @@ pragma solidity ^0.8.13;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract DataShareProtocol is ERC721 {
+contract DataSphereProcotol is ERC721 {
 
     uint256 private _nextTokenId = 1;
 
     // Nome e símbolo fixos definidos diretamente aqui
-    constructor() ERC721("DataShareProtocol", "DSP") {}
+    constructor() ERC721("DataSphereProcotol", "DSP") {}
 
     // Função para criar (mint) um novo token
     function mint(address to) public  returns(bool){
